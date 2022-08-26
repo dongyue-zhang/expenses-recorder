@@ -25,7 +25,7 @@ export const addRecordRequest = record => async dispath => {
         const body = JSON.stringify( {record} );
 
         //req
-        const response = await fetch('http://localhost:5002/records', {
+        const response = await fetch('http://localhost:3000/records', {
             headers: {
                 'Content-Type': 'application/json',
             }, 
@@ -43,7 +43,7 @@ export const addRecordRequest = record => async dispath => {
 
 export const removeRecordRequest = id => async dispath => {
     try {
-        const response = await fetch(`http://localhost:5002/records/${id}`, {
+        const response = await fetch(`http://localhost:3000/records/${id}`, {
             method: 'delete',
         });
         const removedRecord = await response.json();
