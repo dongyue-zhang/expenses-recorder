@@ -1,0 +1,35 @@
+.recordlistItem {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.5px solid grey;
+    margin: 0;
+}
+.recordlistItem > div {
+    margin: 1rem 0 1rem 1rem;
+}
+.item_detail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.item_total{
+    text-align: center;
+    align-self: center;
+    margin: 0 1rem;
+}
+.item_title {
+    margin: 0.5rem 0;
+}
+.item_store_date{
+    display: flex;
+    margin: 0.5rem 0;
+}
+.item_store_date p {
+    margin: 0;
+    width: 6rem;
+}
+h3 {
+    margin: 0;
+}

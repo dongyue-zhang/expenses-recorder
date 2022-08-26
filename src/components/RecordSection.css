@@ -1,0 +1,31 @@
+.recordsection_container{
+
+}
+
+.monthlytotal{
+    margin: 1rem 2rem;
+}
+.title {
+    display: flex;
+    margin: 1rem 1rem;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    margin-right: 1rem;
+    height: fit-content;
+    align-items: center;
+}
+.recordsection_summary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid rgb(193, 192, 192); */
+    border-radius: 0.3rem;
+    margin: 1em 0;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 2px 6px rgb(225, 225, 225);
+    height: 3em;
+    align-items: center;
+    font-size: 1.2rem;
+}
