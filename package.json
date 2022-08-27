@@ -44,5 +44,6 @@
     "redux-thunk": "^2.4.1",
     "reselect": "^4.1.6",
     "styled-components": "^5.3.5"
-  }
+  },
+  "proxy":"http://localhost:5001"
 }

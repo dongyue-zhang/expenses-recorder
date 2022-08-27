@@ -47,7 +47,7 @@ const FilteringForm = ({ setFilteringby, setOnSorting, categories, storeNames })
                 <p>Store Name:</p>
                 
                     <select onChange={(e) => setStoreName(e.target.value)}>
-                        <option value='' disabled selected>Please choose...</option>
+                        <option disabled defaultValue={''}>Please choose...</option>
                         {storeNames.map(store => <option key= {store} value={store}>{store}</option>)}
                     </select>
                     <div><button onClick={onFilterByStoreName}>Submit</button></div>

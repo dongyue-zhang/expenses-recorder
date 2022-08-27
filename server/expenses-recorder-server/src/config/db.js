@@ -1,4 +1,3 @@
-require('dotenv').config();
 const mongoose = require('mongoose')
 
 module.exports = connectMongoDB = async () => {
@@ -16,5 +15,3 @@ module.exports = connectMongoDB = async () => {
         console.error(error.message)
     }
 }
-
-//?

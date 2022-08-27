@@ -7,14 +7,14 @@ const connectMongoDB = require('./config/db.js');
 const cors = require('cors');
 const Expense = require('./model/expense.model');
 
-const port = 5001;
+const port = 3001;
 
 const app = express();
 // app.set("view engine", "hbs");
 // app.engine('html', hbs.__express);
 
 // app.set("views", path.join(__dirname, "../public"));
-app.use(express.static("public"));
+// app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(cors());
 
