@@ -8,8 +8,8 @@ import {
 } from './actions';
 //require('dotenv').config();
 
-//const url = process.env.herokuurl;
 const url = process.env.herokuurl;
+// const url = process.env.localurl;
 
 export const loadRecords = () => async (dispatch, getState) => {
     try{

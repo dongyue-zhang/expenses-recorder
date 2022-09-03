@@ -1883,9 +1883,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
  //require('dotenv').config();
-//const url = process.env.herokuurl;
 
-var url = "https://expenses-recorder.herokuapp.com";
+var url = "https://expenses-recorder.herokuapp.com"; // const url = process.env.localurl;
+
 var loadRecords = function loadRecords() {
   return /*#__PURE__*/function () {
     var _ref = (0,_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__["default"])( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee(dispatch, getState) {
@@ -59495,7 +59495,7 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("b2c264540d7afd73d16e")
+/******/ 		__webpack_require__.h = () => ("a52ada0067e4a6360be6")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
