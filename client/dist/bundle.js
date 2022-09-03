@@ -1883,8 +1883,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
  //require('dotenv').config();
-
-var url = "https://expenses-recorder.herokuapp.com"; // const url = process.env.localurl;
+// const url = process.env.herokuurl;
+// const url = process.env.localurl;
 
 var loadRecords = function loadRecords() {
   return /*#__PURE__*/function () {
@@ -1897,7 +1897,7 @@ var loadRecords = function loadRecords() {
               _context.prev = 0;
               dispatch((0,_actions__WEBPACK_IMPORTED_MODULE_2__.loadRecordsInProgress)());
               _context.next = 4;
-              return fetch(url + '/records');
+              return fetch('https://expenses-recorder.herokuapp.com/records');
 
             case 4:
               response = _context.sent;
@@ -1944,7 +1944,7 @@ var addRecordRequest = function addRecordRequest(record) {
               }); //req
 
               _context2.next = 4;
-              return fetch(url + '/records', {
+              return fetch('https://expenses-recorder.herokuapp.com/records', {
                 headers: {
                   'Content-Type': 'application/json'
                 },
@@ -1991,7 +1991,7 @@ var removeRecordRequest = function removeRecordRequest(id) {
             case 0:
               _context3.prev = 0;
               _context3.next = 3;
-              return fetch(url + "/records/".concat(id), {
+              return fetch("https://expenses-recorder.herokuapp.com/records/".concat(id), {
                 method: 'delete'
               });
 
@@ -59495,7 +59495,7 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("a52ada0067e4a6360be6")
+/******/ 		__webpack_require__.h = () => ("fda637ee2228aa737a24")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
