@@ -7,7 +7,6 @@
     "test": "mocha \"src/**/*.test.js\" --require @babel/register --recursive",
     "build": "npx webpack --mode development",
     "dev": "npx webpack-dev-server --mode development",
-    "preinstall": "npx npm-force-resolutions",
     "heroku-postbuild": "cd client && npm install && npm run build:prod"
   },
   "keywords": [],
@@ -50,8 +49,5 @@
     "reselect": "^4.1.6",
     "styled-components": "^5.3.5",
     "validator": "^13.7.0"
-  },
-  "overrides": {
-    "react-error-overlay": "6.0.9"
   }
 }
