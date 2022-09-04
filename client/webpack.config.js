@@ -22,8 +22,8 @@ module.exports = {
     },
     resolve: { extensions: ['*', '.js', '.jsx'] },
     output: {
-        path: path.resolve(__dirname, 'public/'),
-        publicPath: '/public/',
+        path: path.resolve(__dirname, 'dist/'),
+        publicPath: '/dist/',
         filename: 'bundle.js'
     },
     devServer: {
@@ -32,7 +32,7 @@ module.exports = {
         },
         port: 3000,
         devMiddleware: {
-            publicPath: 'http://localhost:3000/public/',
+            publicPath: 'http://localhost:3000/dist/',
         },
         hot: "only"
     },
