@@ -9,6 +9,10 @@
     "dev": "npx webpack-dev-server --mode development",
     "build": "npx webpack --mode production"
   },
+  "engines": {
+    "npm": "^8.1.2",
+    "node": ">=18.8.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
