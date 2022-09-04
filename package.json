@@ -13,8 +13,8 @@
   "resolutions": {
     "webpack": "5.74.0"},
   "engines": {
-    "npm": "^8.1.2",
-    "node": ">=18.8.0"
+    "npm": "8.1.2",
+    "node": "18.8.0"
   },
   "dependencies": {
     "body-parser": "^1.20.0",
