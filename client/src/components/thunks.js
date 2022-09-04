@@ -6,12 +6,12 @@ import {
     loadRecordsSuccess,
     loadRecordsFailure
 } from './actions';
-//require('dotenv').config();
+// require('dotenv').config();
 
-// const url = process.env.herokuurl;
-// const url = process.env.localurl;
+const url = process.env.herokuurl + ':' + process.env.PORT;
+// const url = process.env.localurl + ':' + process.env.PORT
 // const url = 'http://localhost:5001';
-const url = 'https://expenses-recorder.herokuapp.com';
+// const url = 'https://expenses-recorder.herokuapp.com:' + process.env.PORT;
 
 export const loadRecords = () => async (dispatch, getState) => {
     try{
