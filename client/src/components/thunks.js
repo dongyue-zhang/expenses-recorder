@@ -10,7 +10,8 @@ import {
 
 // const url = process.env.herokuurl;
 // const url = process.env.localurl;
-const url = 'http://localhost:5001';
+// const url = 'http://localhost:5001';
+const url = 'https://expenses-recorder.herokuapp.com/';
 
 export const loadRecords = () => async (dispatch, getState) => {
     try{
