@@ -6,7 +6,6 @@ import {
     loadRecordsSuccess,
     loadRecordsFailure
 } from './actions';
-// require('dotenv').config();
 
 const url = process.env.herokuurl + ':' + process.env.PORT;
 // const url = process.env.localurl + ':' + process.env.PORT
