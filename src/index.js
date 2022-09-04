@@ -14,7 +14,7 @@ const app = express();
 // app.engine('html', hbs.__express);
 
 // app.set("views", path.join(__dirname, "../public"));
-app.use(express.static("public"));
+app.use(express.static("client/public"));
 app.use(bodyParser.json());
 app.use(cors());
 

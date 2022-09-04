@@ -14,7 +14,7 @@ import {
 export const loadRecords = () => async (dispatch, getState) => {
     try{
         dispatch(loadRecordsInProgress());
-        const response = await fetch('https://expenses-recorder.herokuapp.com/records');
+        const response = await fetch('/records');
         const records = await response.json();
         // console.log(records);
         dispatch(loadRecordsSuccess(records));
@@ -29,7 +29,7 @@ export const addRecordRequest = record => async dispath => {
         const body = JSON.stringify( {record} );
 
         //req
-        const response = await fetch('https://expenses-recorder.herokuapp.com/records', {
+        const response = await fetch('/records', {
             headers: {
                 'Content-Type': 'application/json',
             }, 
@@ -47,7 +47,7 @@ export const addRecordRequest = record => async dispath => {
 
 export const removeRecordRequest = id => async dispath => {
     try {
-        const response = await fetch(`https://expenses-recorder.herokuapp.com/records/${id}`, {
+        const response = await fetch(`/records/${id}`, {
             method: 'delete',
         });
         const removedRecord = await response.json();
