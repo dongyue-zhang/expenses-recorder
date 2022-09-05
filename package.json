@@ -5,14 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && npm install && npx webpack --mode production"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "resolutions": {
-    "webpack": "5.74.0"
-  },
   "engines": {
     "npm": "8.1.2",
     "node": "18.8.0"
