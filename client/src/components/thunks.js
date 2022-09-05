@@ -7,8 +7,8 @@ import {
     loadRecordsFailure
 } from './actions';
 
-const url = process.env.herokuurl + ':' + process.env.PORT;
-// const url = process.env.localurl + ':' + process.env.PORT
+// const url = process.env.url + ':' + process.env.PORT;
+const url = process.env.url
 // const url = 'http://localhost:5001';
 // const url = 'https://expenses-recorder.herokuapp.com:' + process.env.PORT;
 

@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: './src/index.js',
-    mode: 'development',
+    mode: 'production',
     devtool: "source-map",
     module: {
         rules: [
@@ -20,7 +20,7 @@ module.exports = {
             }
         ]
     },
-    resolve: { extensions: ['*', '.js', '.jsx'] },
+    resolve: { extensions: ['*', '.js', '.jsx']},
     output: {
         path: path.resolve(__dirname, '../public/'),
         publicPath: '/public',
