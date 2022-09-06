@@ -7,10 +7,7 @@ import {
     loadRecordsFailure
 } from './actions';
 
-// const url = process.env.url + ':' + process.env.PORT;
 const url = process.env.url
-// const url = 'http://localhost:5001';
-// const url = 'https://expenses-recorder.herokuapp.com:' + process.env.PORT;
 
 export const loadRecords = () => async (dispatch, getState) => {
     try{

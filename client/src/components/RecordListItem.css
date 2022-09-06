@@ -1,5 +1,6 @@
 .recordlistItem {
     /* border: 1px solid blue; */
+    font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
     width: 100%;

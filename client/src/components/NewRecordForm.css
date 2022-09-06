@@ -7,10 +7,10 @@
     margin: 0;
 }
 .header_buttons button{
-    width: 5rem;
-    height: 1.8rem;
-    font-size: large;
-    margin: 0.5rem;
+    width: 3rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    margin: 0.2rem;
     background: none;
     border-radius: 0.3rem;
     border: 0;
@@ -18,47 +18,56 @@
     color: white;
 }
 .header_logo h2{
+    font-size: 1rem;
     margin: 0;
 }
 .new_record_form {
-    margin: 1rem 2rem 0 2rem;
+    /* margin: 1rem 2rem 0 2rem; */
+    font-size: 0.8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.new_record_form div {
-    width: 48%;
+.form_field div{
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem 0;
     align-items: center;
+    /* width: 100%; */
+    /* width: 48%;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    align-items: center; */
 }
-.new_record_form input, 
-.new_record_form select {
+.form_field{
+    width: 48%;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+.form_field input, 
+.form_field select {
     margin: 0.2rem 0;
     height: 2rem;
     padding: 0 0.8rem;
-    width: 80%;
+    width: 65%;
     border: 1px solid rgb(147, 146, 146);
     border-radius: 0.2rem;
 }
-.new_record_form select {width: 70%;}
-.new_record_form label {
+.form_field label {
     margin: 0.2rem 0;
-    width: 20%;
+    width: auto;
     text-align: left;
 }
 #text {
     padding: 0 0.8rem;
     width: calc(100% - 1.6rem);
 }
-.new_record_form div:first-child,
-.new_record_form div:nth-last-child(2),
-.new_record_form div:last-child {
+.new_record_form div:first-child, 
+.new_record_form div:last-child, 
+.new_record_form div:nth-child(6){
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 button[type=submit]{
     width: 100%;
@@ -75,4 +84,9 @@ button[type=submit]{
     width: 100%;
     height: 10rem;
     padding: 0;
+}
+.required:after {
+    color: red;
+    content: '*';
+    display: inline;
 }

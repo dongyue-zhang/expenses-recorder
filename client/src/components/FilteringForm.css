@@ -1,12 +1,14 @@
 .filtering_form{
-    padding: 1rem;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
 }
-.filtering_form p{
+
+/* .filtering_form p{
     width: 7rem;
-}
+} */
 .filtering_form select{
-    width: 63%;
-    height: 2rem;
+    width: 60%;
+    height: 1.5rem;
     border: 1px solid rgb(147, 146, 146);
     border-radius: 0.2rem;
 }
@@ -17,9 +19,13 @@
 .filtering_form_categories_buttons button{
     background: none;
     border: 0;
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 0.3rem;
+
 }
+/* .filtering_form_categories_buttons {
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 0.2rem;
+} */
 .filtering_form_categories_buttons button:hover{
     cursor: pointer;
     color: blue;
@@ -29,28 +35,36 @@
     border-radius: 0.2rem;
 }
 .filtering_form input{
-    width: 30%;
-    height: 2rem;
+    width: 7.5rem;
+    height: 1.5rem;
+    margin: 0 0.25rem;
     border: 1px solid rgb(147, 146, 146);
     border-radius: 0.2rem;
+    box-sizing: border-box;
 }
-
-
 .filtering_form_total label,
 .filtering_form_date label{
     
-    margin: 0 0.5rem;
+    /* margin: 0 0.5rem; */
 }
-.filtering_form_storeName,
+/* .filtering_form_storeName, */
 .filtering_form_date,
 .filtering_form_total
 {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items:flex-start;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    /* justify-content: flex-start; */
 }
-.filtering_form_storeName div{
-    margin: 0 0.5rem;
+.filtering_form_date > div,
+.filtering_form_total > div, .filtering_form_storeName {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.filtering_form_storeName{
+    margin: 0.5rem 0;
 }
 .filtering_form_total button,
 .filtering_form_date button,
@@ -58,12 +72,12 @@
     background-color: black;
     color: white;
     border: 0;
-    height: 2rem;
-    margin: 0;
+    height: 1.5rem;
+    /* margin: 0; */
 }
 
 .filtering_form_total div:last-child,
 .filtering_form_date div:last-child,
 .filtering_form_storeName div:last-child {
-    margin: 0 1.5rem;
+    /* margin-left: 0.5rem; */
 }
