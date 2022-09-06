@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './NewRecordForm.css'
 import { getRecords } from "./selectors";
 import { addRecordRequest } from './thunks';
@@ -6,7 +6,14 @@ import { connect } from 'react-redux';
 import FieldError from "./FieldError";
 import { Form, FormField } from 'react-hooks-form';
 
-const NewRecordForm = ({records, onCreatePressed}) => {
+const NewRecordForm = ({records, onCreatePressed, setOnAdding}) => {
+    // const [text, setText] = useState('');
+    // const [category, setCategory] = useState('');
+    // const [date, setDate] = useState('');
+    // const [storeName, setStoreName] = useState('');
+    // const [total, setTotal] = useState('');
+    // const [details, setDetails] = useState('');
+
 
     function validate (formValues) {
         let errors = {};
@@ -41,7 +48,6 @@ const NewRecordForm = ({records, onCreatePressed}) => {
         };
     }
 
-
     const handleSubmit = (formValues) => {
             let newRecord = {
                 text: formValues.text,
@@ -51,13 +57,14 @@ const NewRecordForm = ({records, onCreatePressed}) => {
                 total: formValues.total,
                 details: formValues.details,
             };
+            setOnAdding(false);
             
             return onCreatePressed(newRecord);
     }
     
     
     return (
-    <Form onSubmit={handleSubmit} validate={validate} className="new_record_form">
+    <Form onSubmit={handleSubmit} validate={validate} className='new_record_form'>
         <div className="form_field">
             <label htmlFor='text' className="required">Title</label>
             <FormField component='input' type="text" id="text" name='text' />
@@ -67,7 +74,7 @@ const NewRecordForm = ({records, onCreatePressed}) => {
             <div>
                 <label htmlFor='category' className="required">Category</label>
                 <FormField component='select' id='category' name='category' >
-                    <option value='' disabled>Please choose</option>
+                    <option value={null}>Choose</option>
                     <option value='Grocery'>Grocery</option>
                     <option value='Clothing'>Clothing</option>
                     <option value='Traveling'>Traveling</option>
@@ -97,7 +104,7 @@ const NewRecordForm = ({records, onCreatePressed}) => {
         <div className="form_field">
             <div>
                 <label htmlFor='total' className="required">Total</label>
-                <FormField component='input' id='total' type='number' name='total' />
+                <FormField component='input' id='total' type='number' name='total'/>
             </div>
             <FieldError name='total' />
         </div>

@@ -39,9 +39,9 @@
     align-items: center; */
 }
 .form_field{
-    width: 48%;
+    width: 49%;
     justify-content: space-between;
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
     align-items: left;
     display: flex;
     flex-direction: column;
@@ -50,10 +50,11 @@
 .form_field select {
     margin: 0.2rem 0;
     height: 2rem;
-    padding: 0 0.8rem;
-    width: 65%;
+    padding-left: 0.2rem;
+    width: 72%;
     border: 1px solid rgb(147, 146, 146);
     border-radius: 0.2rem;
+    text-align: left;
 }
 .form_field label {
     margin: 0.2rem 0;

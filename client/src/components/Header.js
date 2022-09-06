@@ -36,13 +36,13 @@ const Header = ({ setOnSorting, setSortby, setFilteringby, categories, storeName
                     <button onClick={() => setOnFiltering(true)}>Filter</button>
                     <select onChange={(e) => {setOnSorting(true);setSortby(e.target.value)}} defaultValue={'Sort By'}>
                         <option value=''>Sort By</option>
-                    {sortbyOptions.map(option => <option key= {option.value} value={option.value}>{option.label}</option>)}
+                    {sortbyOptions.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}
                     </select>
                 </div>}
             </div>
         </div>
 
-        {onAdding ? <NewRecordForm /> : null}
+        {onAdding ? <NewRecordForm setOnAdding={setOnAdding}/> : null}
         {onFiltering ? 
         <FilteringForm 
             setFilteringby={setFilteringby} 

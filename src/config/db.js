@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 
 module.exports = connectMongoDB = async () => {
     try {
+        console.log(process.env.mongodburi);
         await mongoose.connect(
             process.env.mongodburi,
             {
