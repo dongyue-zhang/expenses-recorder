@@ -34,8 +34,8 @@ const Header = ({ setOnSorting, setSortby, setFilteringby, categories, storeName
                 <div>
                     <button onClick={() => setOnAdding(true)}>Add</button>
                     <button onClick={() => setOnFiltering(true)}>Filter</button>
-                    <select onChange={(e) => {setOnSorting(true);setSortby(e.target.value)}} defaultValue={'Sort By'}>
-                        <option value=''>Sort</option>
+                    <select onChange={(e) => {setOnSorting(true);setSortby(e.target.value)}}>
+                        <option value='' disabled={true}>Sort</option>
                     {sortbyOptions.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}
                     </select>
                 </div>}

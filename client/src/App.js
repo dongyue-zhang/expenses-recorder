@@ -22,7 +22,7 @@ const App = ( {records, isLoading, onRemovePressed, startLoadingRecords} ) => {
    let months = [];
 
    records.forEach(record => {
-      if (categories.indexOf(record.categore) === -1) {
+      if (categories.indexOf(record.category) === -1) {
          categories.push(record.category);
       }
       

@@ -47,7 +47,6 @@ const RecordList = ({
             case 'CATEGORY':
                 let recordsByCategory =[];
                 categories.forEach(category => {recordsByCategory.push({key: category, records: []})});
-                console.log(recordsByCategory);
                 records.forEach(record => {
                     recordsByCategory[categories.indexOf(record.category)].records.push(record);
                 })
