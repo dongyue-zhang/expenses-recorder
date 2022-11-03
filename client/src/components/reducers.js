@@ -43,11 +43,6 @@ export const records = ( state = inistialState, action) => {
             }
         }
 
-        // case SHOW_ITEMS: {
-        //     const { records, showItems } = payload;
-        //     if 
-        // }
-
         case LOAD_RECORDS_IN_PROGRESS:
             return {
                 ...state,
