@@ -7,13 +7,6 @@ import FieldError from "./FieldError";
 import { Form, FormField } from 'react-hooks-form';
 
 const NewRecordForm = ({records, onCreatePressed, setOnAdding}) => {
-    // const [text, setText] = useState('');
-    // const [category, setCategory] = useState('');
-    // const [date, setDate] = useState('');
-    // const [storeName, setStoreName] = useState('');
-    // const [total, setTotal] = useState('');
-    // const [details, setDetails] = useState('');
-
 
     function validate (formValues) {
         let errors = {};
@@ -26,8 +19,7 @@ const NewRecordForm = ({records, onCreatePressed, setOnAdding}) => {
                 errors.text = 'The record exits. Please enter again!';
             }
         }
-        
-        
+               
         if (typeof formValues.category == 'undefined') {
             errors.category = 'Please choose a category';
         }
@@ -50,12 +42,12 @@ const NewRecordForm = ({records, onCreatePressed, setOnAdding}) => {
 
     const handleSubmit = (formValues) => {
             let newRecord = {
-                text: formValues.text,
+                text: formValues.text.trim(),
                 category: formValues.category,
                 date: new Date(formValues.date),
-                storeName: formValues.storeName,
+                storeName: formValues.storeName.trim(),
                 total: formValues.total,
-                details: formValues.details,
+                details: formValues.details.trim(),
             };
             setOnAdding(false);
             
