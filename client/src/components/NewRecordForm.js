@@ -19,7 +19,7 @@ const NewRecordForm = ({records, onCreatePressed, setOnAdding}) => {
                 errors.text = 'The record exits. Please enter again!';
             }
         }
-               
+
         if (typeof formValues.category == 'undefined') {
             errors.category = 'Please choose a category';
         }
@@ -65,7 +65,7 @@ const NewRecordForm = ({records, onCreatePressed, setOnAdding}) => {
         <div className="form_field">
             <div>
                 <label htmlFor='category' className="required">Category</label>
-                <FormField component='select' id='category' name='category' >
+                <FormField component='select' id='category' name='category'>
                     <option value={null}>Choose</option>
                     <option value='Grocery'>Grocery</option>
                     <option value='Clothing'>Clothing</option>
